@@ -25,4 +25,4 @@ jobs:
           docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
           docker build -t spring-cicd .
           docker tag spring-cicd KOOBONSEOK/spring-cicd:${GITHUB_SHA::7}
-          docker push {도커 유저네임}/spring-cicd:${GITHUB_SHA::7}
+          docker push KOOBONSEOK/spring-cicd:${GITHUB_SHA::7}
