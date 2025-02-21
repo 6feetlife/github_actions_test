@@ -41,7 +41,6 @@ tasks.named('javadoc') {
 test {
     useJUnitPlatform()
 }
-bootJar {
-	archiveBaseName = 'hello'
-	archiveVersion = '0.0.1-SNAPSHOT'
+jar {
+	enabled = false
 }
